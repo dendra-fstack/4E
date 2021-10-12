@@ -1,0 +1,79 @@
+/* Bagian Header */
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(12, 13, 14, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 315px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(146, 20, 20);
+    text-align: center;
+    border-radius: 50px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .menu-icon {
+    color:white;
+    float:right;
+    display:none;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 80px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+
+/* Bagian Main */
+
+
+
+/* Bagian Body */
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bagian Footer */
