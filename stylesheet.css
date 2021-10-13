@@ -51,21 +51,21 @@ header {
     padding: 140px 0 100px 0;
     background-image: url(img-background1.jpg);
     background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	  position: relative;
+	  display: flex;
+	  justify-content: center;
+  	align-items: center;
     border-bottom: 8px solid red;
   }
 .top-wrapper:after {
   content:'';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(3, 3, 3, 0.774);
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(3, 3, 3, 0.774);
 }
 
   .top-wrapper h1 {
@@ -79,15 +79,37 @@ header {
     text-align: center;
     text-shadow: 5px 5px 9px rgb(3, 0, 0);
     border: 5px solid rgb(168, 30, 30);
+    animation-name: totop;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    position: relative;
+  }
+
+  @keyframes totop {
+    0% {color: black; left: 0px; top: 0px;}
+    25% {color: white; left: 0px; top: -170px;}
+    50% {color: white; left: 0px; top: 0px;}
   }
 
   .top-wrapper h2 {
+    width: 580px;
     z-index: 1;
     font-size: 35px;
     font-weight: 100px;
     color: hsl(0, 0%, 100%);
     text-shadow: 5px 5px 9px rgb(3, 0, 0);
-    text-align: bold;
+    text-align: center;
+    animation-name: toright;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  @keyframes toright {
+    0% {color: black; left: 0px; top: 0px;}
+    25% {color: white; left: 750px; top: 0px;}
+    50% {color: white; left: 0px; top: 0px;}
   }
 
   .top-wrapper p {
@@ -97,12 +119,22 @@ header {
     font-weight: bold;
     text-align: center;
     color: rgb(255, 255, 255);
-    text-shadow: 5px 1px 50px rgb(0, 0, 0)
+    text-shadow: 5px 1px 50px rgb(0, 0, 0);
+    animation-name: toleft;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    position: relative;
+  }
+
+  @keyframes toleft {
+    0% {color: black; right: 0px; top: 0px;}
+    25% {color: white; right: 750px; top: 0px;}
+    50% {color: white; right: 0px; top: 0px;}
   }
 
   .center-wrapper {
-    background-color: rgba(12, 13, 14, 0.9);
-    border-bottom: 1px solid rgb(223, 1, 1);
+    background-color: rgb(15, 15, 15);
+    border-bottom: 1px solid red;
     padding-bottom: 80px;
     text-align: center;
   }
@@ -119,7 +151,7 @@ header {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
   }
   
   .text {
@@ -133,23 +165,23 @@ header {
     font-weight: normal;
   }
   
-  .lessons {
+  .services {
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .lesson {
+  .service {
     z-index: 1;
     float: left;
     width: 25%;
   }
   
-  .lesson-icon {
+  .service-icon {
     position: relative;
   }
   
-  .lesson-icon p {
+  .service-icon p {
     position: absolute;
     top: 44%;
     width: 100%;
