@@ -1,6 +1,8 @@
 /* Bagian Header */
 
 header {
+    border-top: 8px solid red;
+    border-bottom: 8px solid red;
     height: 80px;
     width: 100%;
     background-color: rgba(12, 13, 14, 0.9);
@@ -29,7 +31,7 @@ header {
     margin-right: -25px;
   }
   
-  .header-right a {
+  .header-left a {
     line-height: 80px;
     padding: 0 25px;
     color: white;
@@ -38,31 +40,130 @@ header {
     transition: all 0.5s;
   }
   
-  .header-right a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+  .header-left a:hover {
+    background-color: rgba(236, 19, 19, 0.3);
   }
   
 /* Bagian Main */
 
 .top-wrapper {
-    height: 390px;
-    padding: 280px 0 100px 0;
+    height: 75vh;
+    padding: 140px 0 100px 0;
     background-image: url(img-background1.jpg);
-    opacity: 2.0;
     background-size: cover;
-    color: rgb(254, 255, 247);
-    text-align: center;
+	  position: relative;
+	  display: flex;
+	  justify-content: center;
+  	align-items: center;
+    border-bottom: 8px solid red;
   }
-  
+.top-wrapper:after {
+  content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(3, 3, 3, 0.774);
+}
+
   .top-wrapper h1 {
+    z-index: 1;
     padding: 8px;
     font-size: 50px;
+    font-weight: bold;
     letter-spacing: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 95px;
+    color: white;
+    text-align: center;
     text-shadow: 5px 5px 9px rgb(3, 0, 0);
     border: 5px solid rgb(168, 30, 30);
   }
+
+  .top-wrapper h2 {
+    z-index: 1;
+    font-size: 35px;
+    font-weight: 100px;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 5px 5px 9px rgb(3, 0, 0);
+    text-align: bold;
+  }
+
+  .top-wrapper p {
+    z-index: 1;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 1px 50px rgb(0, 0, 0)
+  }
+
+  .center-wrapper {
+    background-color: rgba(12, 13, 14, 0.9);
+    border-bottom: 1px solid rgb(223, 1, 1);
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  
+  .text p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    font-weight: normal;
+  }
  
+  .service-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #111010;
+    text-align: center;
+  }
+  
+  .text {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #fdfdfd;
+  }
+  
+  .text h2 {
+    font-weight: normal;
+  }
+  
+  .lesson {
+    float: left;
+    width: 25%;
+  }
+  
+  .lesson-icon {
+    position: relative;
+  }
+  
+  .lesson-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+  }
+  
+  .txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+  }
+  
+  .text h3 {
+    font-weight: normal;
+  }
+
+  .clear {
+    clear: left;
+  }
+  
+  
 
 /* Bagian Body */
 
@@ -75,6 +176,7 @@ a {
 }
 
 .container {
+    z-index:1 ;
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
