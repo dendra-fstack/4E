@@ -117,8 +117,8 @@ header {
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #111010;
     text-align: center;
+    background-color: black;
   }
   
   .text {
@@ -128,10 +128,18 @@ header {
   }
   
   .text h2 {
+    
     font-weight: normal;
   }
   
+  .lessons {
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lesson {
+    z-index: 1;
     float: left;
     width: 25%;
   }
