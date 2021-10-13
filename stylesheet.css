@@ -51,21 +51,21 @@ header {
     padding: 140px 0 100px 0;
     background-image: url(img-background1.jpg);
     background-size: cover;
-	  position: relative;
-	  display: flex;
-	  justify-content: center;
-  	align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 8px solid red;
   }
 .top-wrapper:after {
   content:'';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(3, 3, 3, 0.774);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(3, 3, 3, 0.774);
 }
 
   .top-wrapper h1 {
