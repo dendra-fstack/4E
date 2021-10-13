@@ -91,10 +91,11 @@ header {
   }
 
   .top-wrapper p {
+    float: right;
     z-index: 1;
     font-size: 25px;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 5px 1px 50px rgb(0, 0, 0)
   }
