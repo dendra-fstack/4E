@@ -98,7 +98,7 @@ header {
     font-weight: 100px;
     color: hsl(0, 0%, 100%);
     text-shadow: 5px 5px 9px rgb(3, 0, 0);
-    text-align: center;
+    text-align: left;
     animation-name: toright;
     animation-duration: 10s;
     animation-delay: -2s;
@@ -152,6 +152,7 @@ header {
     padding-right: 5%;
     text-align: center;
     background-color: rgb(15, 15, 15);
+    border-bottom: 1px solid red;
   }
   
   .text {
@@ -193,7 +194,7 @@ header {
     display: inline-block;
     margin-top: 15px;
     font-size: 15px;
-    color: #b3aeb5;
+    color: white;
   }
   
   .text h3 {
@@ -210,6 +211,7 @@ header {
 
 body {
     margin: 0;
+    background-color: rgb(15, 15, 15);
 }
 
 a {
@@ -226,3 +228,42 @@ a {
 }
 
 /* Bagian Footer */
+
+footer {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+  border-bottom: 10px solid red;
+}
+
+.txt-footer {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: white;
+}
+
+
+.footers {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(241, 241, 241);
+  background-color: rgb(15, 15, 15);
+}
+
+.footer {
+  z-index: 1;
+  float: left;
+  width: 25%;
+}
+
+.footer-icon {
+  position: relative;
+}
+
+.copyr {
+  color: white;
+}
