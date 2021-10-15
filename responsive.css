@@ -19,9 +19,11 @@
      .heading h2 {
        font-size:20px;
      }
-   }
-   /* Untuk Smartphone */
-   @media(max-width: 768px) {
+}
+
+
+/* Untuk Smartphone */
+@media(max-width: 768px) {
 
     .top-wrapper {
         height: 590px;
@@ -37,16 +39,15 @@
       display: none;
     }
 
-
     .logo{
         width: 150px;
         margin-top: 15px;
         margin-left: auto;
         margin-right: auto;
-         color: white;
-         font-size: 20px;
-         text-align: center;
-         border-radius: 8px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 8px;
         background-color: red;
     }
      .header-left {
@@ -83,6 +84,7 @@
      .grid {
        width:100%;
      }
+     
      
       footer {
        text-align: center;
