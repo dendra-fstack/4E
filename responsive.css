@@ -27,6 +27,17 @@
         height: 590px;
     }
 
+    .fa-ellipsis-v {
+      display: block;
+      float: left;
+      color: red;
+      float: left;
+      font-size: 25px;
+      padding: 21px;
+      display: none;
+    }
+
+
     .logo{
         width: 150px;
         margin-top: 15px;
