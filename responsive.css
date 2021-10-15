@@ -21,19 +21,6 @@
        display: none;
      }
     
-     .menu-icon {
-       display: block;
-       float:right;
-     }
-     
-    .btn {
-       width: 100%;
-     }
-     
-     .facebook {
-       margin-bottom: 10px;
-     }
-     
      .top-wrapper {
        text-align: left;
      }
@@ -66,3 +53,4 @@
      }
      
    }
+
