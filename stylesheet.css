@@ -20,7 +20,7 @@ a {
 /* Bagian Header */
 
 header {
-  height: 80p;
+  height: 80px;
   width: 100%;
   background-color: rgba(12,13,14,0.9);
   position :fixed;
@@ -107,7 +107,7 @@ header {
   position: relative;
   font-size: 60px;
   letter-spacing: 5px;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
   border: 2px solid red;
   text-shadow: 5px 5px 9px rgb(3, 0, 0);
   animation-name: totop;
@@ -160,7 +160,7 @@ header {
 }
 
 .grid-wrapper {
-  padding-top: 80px;
+  padding: 30px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: black;
@@ -168,7 +168,7 @@ header {
 }
 
 .heading {
-  padding-top: 80px;
+  padding-top: 10px;
   padding-bottom: 50px;
   color: white;
 }
@@ -207,22 +207,10 @@ header {
 }
 
 .message-wrapper {
+  padding: 25px;
   background-color: black;
   text-align: center;
   border-bottom: 2px solid red;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
 }
 
 
