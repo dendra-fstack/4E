@@ -36,6 +36,7 @@ header {
   color: white;
   font-size: 35px;
   text-align: center;
+  text-shadow: 5px 5px 9px rgb(3, 0, 0);
   border-radius: 8px;
   background-color: red;
 }
@@ -44,11 +45,6 @@ header {
   float: right;
 }
 
-.menu-icon {
-  color:white;
-  float:right;
-  display:none;
-}
 
 .header-left {
   float: left;
@@ -66,14 +62,6 @@ header {
 
 .header-left a:hover {
   background-color: rgba(243, 10, 10, 0.3);
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
 }
   
 /* Bagian Main */
@@ -136,6 +124,8 @@ header {
   margin-bottom: 50px;
 }
 
+
+
 @keyframes toright {
   0% {color: black; left: 0px; top: 0px;}
   25% {color: white; left: 750px; top: 0px;}
@@ -163,7 +153,7 @@ header {
   padding: 30px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: black;
+  background-color: rgb(19, 18, 18);
   text-align: center;
 }
 
@@ -208,7 +198,7 @@ header {
 
 .center-wrapper {
   padding: 25px;
-  background-color: black;
+  background-color: rgb(19, 18, 18);
   text-align: center;
   border-bottom: 2px solid red;
 }
@@ -241,7 +231,7 @@ footer p {
 footer {
   border-top: 5px solid red;
   border-bottom: 5px solid red;
-  background-color: black;
+  background-color: rgb(19, 18, 18);
   padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
