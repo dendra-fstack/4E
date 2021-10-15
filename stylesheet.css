@@ -1,62 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Bagian Header */
 
 header {
-    border-top: 8px solid red;
-    border-bottom: 8px solid red;
-    height: 80px;
-    width: 100%;
-    background-color: rgba(12, 13, 14, 0.9);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .logo {
-    width: 315px;
-    margin-top: 20px;
-    color: white;
-    background-color: rgb(146, 20, 20);
-    text-align: center;
-    border-radius: 50px;
-    text-shadow: 5px 5px 9px rgb(3, 0, 0);
-  }
-  
-  .header-left {
-    float: left;
-  }
-  
-  
-  .header-right {
-    float: right;
-    margin-right: -25px;
-  }
-  
-  .header-left a {
-    line-height: 80px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-  
-  .header-left a:hover {
-    background-color: rgba(236, 19, 19, 0.3);
-  }
+  height: 80p;
+  width: 100%;
+  background-color: rgba(12,13,14,0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+.logo {
+  width: 324px;
+  margin-top: 15px;
+  color: white;
+  font-size: 10;
+  text-align: center;
+  border-radius: 8px;
+  background-color: red;
+}
+
+.header-right {
+  float: right;
+}
+
+.menu-icon {
+  color:white;
+  float:right;
+  display:none;
+}
+
+.header-left {
+  float: left;
+  margin-right: -25px;
+}
+
+.header-left a {
+  line-height: 80px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-left a:hover {
+  background-color: rgba(243, 10, 10, 0.3);
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
   
 /* Bagian Main */
 
 .top-wrapper {
-    height: 75vh;
-    padding: 140px 0 100px 0;
-    background-image: url(img-background1.jpg);
-    background-size: cover;
-	  position: relative;
-	  display: flex;
-	  justify-content: center;
-  	align-items: center;
-    border-bottom: 8px solid red;
-  }
+  height: 75vh;
+  padding: 180px 0 100px 0;
+  background-image: url(img-background1.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid red ;
+  position: relative;
+}
+
 .top-wrapper:after {
   content:'';
 	display: block;
@@ -68,202 +100,161 @@ header {
 	background-color: rgba(3, 3, 3, 0.774);
 }
 
-  .top-wrapper h1 {
-    z-index: 1;
-    padding: 8px;
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    margin-bottom: 95px;
-    color: white;
-    text-align: center;
-    text-shadow: 5px 5px 9px rgb(3, 0, 0);
-    border: 5px solid rgb(168, 30, 30);
-    animation-name: totop;
-    animation-duration: 10s;
-    animation-delay: -2s;
-    position: relative;
-  }
 
-  @keyframes totop {
-    0% {color: black; left: 0px; top: 0px;}
-    25% {color: white; left: 0px; top: -170px;}
-    50% {color: white; left: 0px; top: 0px;}
-  }
 
-  .top-wrapper h2 {
-    width: 580px;
-    z-index: 1;
-    font-size: 35px;
-    font-weight: 100px;
-    color: hsl(0, 0%, 100%);
-    text-shadow: 5px 5px 9px rgb(3, 0, 0);
-    text-align: left;
-    animation-name: toright;
-    animation-duration: 10s;
-    animation-delay: -2s;
-    position: relative;
-    margin-bottom: 50px;
-  }
-
-  @keyframes toright {
-    0% {color: black; left: 0px; top: 0px;}
-    25% {color: white; left: 750px; top: 0px;}
-    50% {color: white; left: 0px; top: 0px;}
-  }
-
-  .top-wrapper p {
-    float: right;
-    z-index: 1;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 1px 50px rgb(0, 0, 0);
-    animation-name: toleft;
-    animation-duration: 10s;
-    animation-delay: -2s;
-    position: relative;
-  }
-
-  @keyframes toleft {
-    0% {color: black; right: 0px; top: 0px;}
-    25% {color: white; right: 750px; top: 0px;}
-    50% {color: white; right: 0px; top: 0px;}
-  }
-
-  .center-wrapper {
-    background-color: rgb(15, 15, 15);
-    border-bottom: 1px solid red;
-    padding-bottom: 80px;
-    text-align: center;
-  }
-  
-  .text p {
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-    font-weight: normal;
-  }
- 
-  .service-wrapper {
-    padding-bottom: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    background-color: rgb(15, 15, 15);
-    border-bottom: 1px solid red;
-  }
-  
-  .text {
-    padding-top: 80px;
-    padding-bottom: 50px;
-    color: #fdfdfd;
-  }
-  
-  .text h2 {
-    
-    font-weight: normal;
-  }
-  
-  .services {
-    z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .service {
-    z-index: 1;
-    float: left;
-    width: 25%;
-  }
-  
-  .service-icon {
-    position: relative;
-  }
-  
-  .service-icon p {
-    position: absolute;
-    top: 44%;
-    width: 100%;
-    color: white;
-  }
-  
-  .txt-contents {
-    width: 80%;
-    display: inline-block;
-    margin-top: 15px;
-    font-size: 15px;
-    color: white;
-  }
-  
-  .text h3 {
-    font-weight: normal;
-  }
-
-  .clear {
-    clear: left;
-  }
-  
-  
-
-/* Bagian Body */
-
-body {
-    margin: 0;
-    background-color: rgb(15, 15, 15);
+.top-wrapper h1 {
+  z-index: 1;
+  position: relative;
+  font-size: 60px;
+  letter-spacing: 5px;
+  margin-bottom: 65px;
+  border: 2px solid red;
+  text-shadow: 5px 5px 9px rgb(3, 0, 0);
+  animation-name: totop;
+  animation-duration: 10s;
+  animation-delay: -2s;
+  margin-bottom: 50px;
 }
 
-a {
-    text-decoration: none;
+@keyframes totop {
+  0% {color: black; left: 0px; top: 0px;}
+  25% {color: white; left: 0px; top: -170px;}
+  50% {color: white; left: 0px; top: 0px;}
 }
 
-.container {
-    z-index:1 ;
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+.top-wrapper h2 {
+  text-shadow: 5px 5px 9px rgb(3, 0, 0);
+  text-align: left;
+  animation-name: toright;
+  margin-top: 20px;
+  font-size: 35px;
+  z-index: 1;
+  position: relative;
+  font-size: 30;
+  animation-duration: 10s;
+  animation-delay: -2s;
+  margin-bottom: 50px;
 }
 
-/* Bagian Footer */
+@keyframes toright {
+  0% {color: black; left: 0px; top: 0px;}
+  25% {color: white; left: 750px; top: 0px;}
+  50% {color: white; left: 0px; top: 0px;}
+}
 
-footer {
+.top-wrapper p {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 3px;
+  font-size: 25px;
+  float: right;
+  animation-name: toleft;
+  animation-duration: 10s;
+  animation-delay: -2s;
+}
+
+@keyframes toleft {
+  0% {color: black; right: 0px; top: 0px;}
+  25% {color: white; right: 750px; top: 0px;}
+  50% {color: white; right: 0px; top: 0px;}
+}
+
+.grid-wrapper {
+  padding-top: 80px;
   padding-left: 5%;
   padding-right: 5%;
+  background-color: black;
   text-align: center;
-  background-color: rgb(15, 15, 15);
-  border-bottom: 10px solid red;
 }
 
-.txt-footer {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
   color: white;
 }
 
-
-.footers {
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgb(241, 241, 241);
-  background-color: rgb(15, 15, 15);
+.heading h2 {
+  font-weight: normal;
 }
 
-.footer {
-  z-index: 1;
+.grid {
   float: left;
   width: 25%;
 }
 
-.footer-icon {
+.grid-icon {
   position: relative;
 }
 
-.copyr {
+.grid-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
   color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  background-color: black;
+  text-align: center;
+  border-bottom: 2px solid red;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+
+.clear {
+  clear: left;
+}
+
+/* Bagian Body */
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/* Bagian Footer */
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+
+}
+
+footer {
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
 }
