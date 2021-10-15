@@ -199,14 +199,14 @@ header {
   text-align: center;
   margin-top: 15px;
   font-size: 15px;
-  color: #b3aeb5;
+  color: white;
 }
 
 .heading h3 {
   font-weight: normal;
 }
 
-.message-wrapper {
+.center-wrapper {
   padding: 25px;
   background-color: black;
   text-align: center;
@@ -233,7 +233,7 @@ footer img {
 }
 
 footer p {
-  color: #b3aeb5;
+  color: white;
   font-size: 12px;
 
 }
@@ -244,5 +244,9 @@ footer {
   background-color: black;
   padding-top: 30px;
   padding-bottom: 20px;
+  text-align: center;
+}
+
+.copyr {
   text-align: center;
 }
